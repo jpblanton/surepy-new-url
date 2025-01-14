@@ -285,7 +285,7 @@ class Surepy:
         return (
             await self.sac.call(
                 method="GET",
-                resource=f"{BASE_RESOURCE}/report/household/{household_id}/pet/{pet_id}",
+                resource=f"{BASE_RESOURCE}/report/household/{household_id}/pet/{pet_id}/aggregate",
             )
             if pet_id
             else await self.sac.call(
